@@ -14,6 +14,8 @@ public class JavaSystemProperties {
         }
 
         //사용자가 직접 자바 시스템 속성 정의
+        //IDE가 아닌 jar로 실행할 때 명령어(실행 시점에 자바 시스템 속성 추가)
+        //java -Durl=devdb -Dusername=dev_user -Dpassword=dev_pw -jar app.jar
         String url = System.getProperty("url");
         String username = System.getProperty("username");
         String password = System.getProperty("password");
