@@ -1,6 +1,14 @@
 #\uC561\uCE04\uC5D0\uC774\uD130 \uAE30\uB2A5\uC744 \uC6F9\uC5D0 \uB178\uCD9C
 management:
+  # \uAE30\uBCF8 shutdown\uB9CC \uBEB4\uACE0 \uBAA8\uB450 \uD65C\uC131\uD654 (post\uB85C \uC9C4\uC785 \uC2DC \uC11C\uBC84 \uAEBC\uC9D0)
+  endpoint:
+    shutdown:
+      enabled: true
   endpoints:
     web:
       exposure:
         include: "*"
+        exclude: "env, bean"
+    jmx:
+      exposure:
+        exclude: "health, info"
