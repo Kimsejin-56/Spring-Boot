@@ -1,0 +1,6 @@
+#\uC561\uCE04\uC5D0\uC774\uD130 \uAE30\uB2A5\uC744 \uC6F9\uC5D0 \uB178\uCD9C
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
